@@ -1,0 +1,66 @@
+.sobre-style {
+    background-image: linear-gradient(#000, #D63031, #D63031, #D63031, #000);
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 18px;
+    text-shadow: 2px 2px 0px #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 130px;
+}
+
+.sobre-style h1 {
+    font-size: 40px;
+    text-shadow: 4px 4px 0px #000;
+    padding-bottom: 40px;
+}
+
+.sobre-style section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre-style section .conhecimentos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.sobre-style section .conhecimentos h2{
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+
+.sobre-style section .images-lang {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.sobre-style section .images-lang img {
+    width: 45px;
+    height: 45px;
+}
+
+.sobre-style .informações {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 40px;
+    margin-bottom: 60px;
+    gap: 80px;
+    font-size: 14px;
+}
+
+.sobre-style .informações img {
+    border: 4px solid #000;
+    box-shadow: 4px 4px 2px #000;
+}

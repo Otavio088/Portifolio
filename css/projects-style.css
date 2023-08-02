@@ -1,0 +1,49 @@
+.projects-style {
+    background-image: linear-gradient(#000, #2D3436, #2D3436, #2D3436, #000);
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 2px 2px 0px #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 150px;
+}
+
+.projects-style .project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects-style h1 {
+    font-size: 40px;
+    text-shadow: 4px 4px 0px #000;
+}
+
+.projects-style .project .part1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 160px;
+    gap: 40vh;
+}
+
+
+
+.projects-style .github {
+    padding-top: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 50px;
+}
+
+.projects-style .github img {
+    cursor: pointer;
+    transition: transform 200ms ease-in-out;
+}
+
+.projects-style .github img:hover {
+    transform: scale(1.2);
+}
