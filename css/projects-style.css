@@ -9,25 +9,25 @@
     padding-top: 150px;
 }
 
+.projects-style h1 {
+    font-size: 40px;
+    text-shadow: 4px 4px 0px #000;
+}
+
 .projects-style .project {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.projects-style h1 {
-    font-size: 40px;
-    text-shadow: 4px 4px 0px #000;
-}
-
 .projects-style .project .part1 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 160px;
+    padding-top: 160px;
+    padding-bottom: 160px;
     gap: 40vh;
 }
-
 
 
 .projects-style .github {
@@ -46,4 +46,42 @@
 
 .projects-style .github img:hover {
     transform: scale(1.2);
+}
+
+@media screen and (max-width: 700px) {
+    .projects-style {
+        padding-top: 80px;
+    }
+    .projects-style h1 {
+        font-size: 35px;
+    }
+
+    .projects-style .project .part1 {
+        gap: 40px;
+    }
+
+    .projects-style .project .part1 p {
+        font-size: 12px;
+    }
+
+    .projects-style .project .part1 #tela-note {
+        width: 130px;
+    }
+
+    .projects-style .project .part1 #tela-cll {
+        width: 40px;
+    }
+
+    .projects-style .github {
+        gap: 12px;
+    }
+
+    .projects-style .github p {
+        font-size: 8px;      
+        white-space: nowrap;
+    }
+
+    .projects-style .github img {
+        width: 60px;
+    }
 }

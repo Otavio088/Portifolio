@@ -7,6 +7,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding-top: 10px;
     padding-bottom: 10px;
 }
 
@@ -29,4 +30,23 @@
 
 .footer-style .gmail img:hover {
     transform: scale(1.2);
+}
+
+@media screen and (max-width: 700px) {
+    .footer-style {
+        font-size: 6px;
+        line-height: 8px;
+        white-space: nowrap;
+    }
+    .footer-style div {
+        margin-left: 10px;
+        margin-right: 0px;
+    }
+    .footer-style .gmail {
+        gap: 10px;
+        margin-right: 10px;
+    }
+    .footer-style .gmail img {
+        width: 40px;
+    }
 }

@@ -4,16 +4,16 @@
     font-family: 'Press Start 2P', cursive;
     font-size: 18px;
     text-shadow: 2px 2px 0px #000;
+    padding-top: 130px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 130px;
 }
 
 .sobre-style h1 {
     font-size: 40px;
     text-shadow: 4px 4px 0px #000;
-    padding-bottom: 40px;
+    padding-bottom: 150px;
 }
 
 .sobre-style section {
@@ -54,8 +54,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 40px;
-    margin-bottom: 60px;
+    padding-top: 40px;
+    padding-bottom: 60px;
     gap: 80px;
     font-size: 14px;
 }
@@ -63,4 +63,29 @@
 .sobre-style .informações img {
     border: 4px solid #000;
     box-shadow: 4px 4px 2px #000;
+}
+
+@media screen and (max-width: 700px) {
+    .sobre-style {
+        padding-top: 80px;
+    }
+    .sobre-style h1 {
+        font-size: 35px;
+        padding-bottom: 45px;
+    }
+    .sobre-style section .conhecimentos h2 {
+        font-size: 16px;
+    }
+    .sobre-style section .conhecimentos img {
+        width: 35px;
+    }
+    .sobre-style .informações {
+        padding-top: 5px;
+        font-size: 8px;
+        gap: 10px;
+        padding-bottom: 100px;
+    }
+    .sobre-style .informações img {
+        width: 180px;
+    }
 }
