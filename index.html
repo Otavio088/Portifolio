@@ -20,6 +20,8 @@
         <link rel="stylesheet" href="css/projects-style.css" type="text/css">
         <link rel="stylesheet" href="css/sobre-style.css" type="text/css">
         <link rel="stylesheet" href="css/footer-style.css" type="text/css">
+    
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     </head>
 
     <body>
@@ -63,47 +65,60 @@
             </div>
         </div>
 
-        <div id="projects" class="projects-style">
-            <h1>PROJETOS</h1>
-            <section class="project">
+        <div id="projects" class="projects-style" >
+            <h1 data-aos="fade-up">PROJETOS</h1>
+            <section class="project" data-aos="fade-up">
                 <div class="part1">
-                    <div class="informa-p">
-                        <p>Nome</p>
-                        <p>Linguagens</p>
+                    <div class="informa-p" data-aos="fade-up">
+                        <p>Calculadora</p>
+                        <div>
+                            <img width="55px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"/>
+                            <img width="55px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"/>
+                            <img width="55px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/>
+                        </div>
                     </div>
-                    <div>
-                        <img id="tela-note" src="img/Projects/telaNotebook.png" alt="Tela de Notebook">
-                        <img id="tela-cll" src="img/Projects/telaCelular.png" alt="Tela de Celular">
+                    <div class="projetos-tela" data-aos="fade-up">
+                        <a target="_blank" href="https://otavio088.github.io/Calculadora/"><img id="tela-note" width="500px" src="img/Projects/notebook-calculadora.png" alt="Tela de Notebook"></a>
+                        <a target="_blank" href="https://otavio088.github.io/Calculadora/"><img id="tela-cll" width="120px" src="img/Projects/celular-calculadora.png" alt="Tela de Celular"></a>
                     </div>
                 </div>
                 <div class="part2">
-                    <p>Descrição</p>
+                    <p>Uma Calculadora que Realiza Operações Simples. Foi</br>
+                    adicionado um botão que altera entre três tipos de cores</br>
+                    diferentes. Linguagens Utilizadas: HTML, CSS e JAVASCRIPT.</p>
                 </div>
             </section>
-            <section class="project">
+            <section class="project" data-aos="fade-up">
                 <div class="part1">
-                    <div class="informa-p">
-                        <p>Nome</p>
-                        <p>Linguagens</p>
+                    <div class="informa-p" data-aos="fade-up">
+                        <p>Lista de Tarefas</p>
+                        <div>
+                            <img width="55px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"/>
+                            <img width="55px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"/>
+                            <img width="55px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/>
+                        </div>
                     </div>
-                    <div>
-                        <img id="tela-note" src="img/Projects/telaNotebook.png" alt="Tela de Notebook">
-                        <img id="tela-cll" src="img/Projects/telaCelular.png" alt="Tela de Celular">
+                    <div class="projetos-tela" data-aos="fade-up">
+                        <a target="_blank" href="https://otavio088.github.io/Lista-de-Tarefas/"><img id="tela-note" width="500px" src="img/Projects/notebook-lista.png" alt="Tela de Notebook"></a>
+                        <a target="_blank" href="https://otavio088.github.io/Lista-de-Tarefas/"><img id="tela-cll" width="120px" src="img/Projects/celular-lista.png" alt="Tela de Celular"></a>
                     </div>
                 </div>
                 <div class="part2">
-                    <p>Descrição</p>
+                    <p>Uma Lista de Tarefas estilo Retrô com o objetivo de</br>
+                    auxiliar na organização do usuário. Também adicionei</br>
+                    um relogio de tempo real para melhor orientação do mesmo.</br>
+                    Linguagens Utilizadas: HTML, CSS e JAVASCRIPT.</p>
                 </div>
             </section>
             <section class="github">
                 <p>Mais Projetos no meu GitHub: </p>
-                <a href="https://github.com/Otavio088" target="_blank"><img src="img/Projects/GitHub.png" alt="logo GitHub" title="GitHub" width="100px"></a>
+                <a href="https://github.com/Otavio088?tab=repositories" target="_blank"><img src="img/Projects/GitHub.png" alt="logo GitHub" title="GitHub" width="100px"></a>
             </section>
         </div>
 
         <div id="sobre" class="sobre-style">
-            <h1>SOBRE MIM</h1>
-            <section>
+            <h1 data-aos="fade-up">SOBRE MIM</h1>
+            <section data-aos="fade-up">
                 <div class="conhecimentos">
                     <div>
                         <h2>Conhecimentos em:</h2>
@@ -117,15 +132,14 @@
                     </div>
                 </div>
                 <div class="informações">
-                    <p>Com 20 anos de</br>
-                    idade, atualmente</br>
-                    estou no terceiro</br>
-                    período da</br>
-                    Faculdade de</br>
+                    <p>Atualmente, com 20</br>
+                    anos de idade, estou</br>
+                    no terceiro período</br>
+                    da Faculdade de</br>
                     Análise e</br>
                     Desenvolvimento de</br>
-                    Sistemas(3/6).</br>
-                    Tenho montado meus</br>
+                    Sistemas. Tenho</br>
+                    montado meus</br>
                     esboços de projetos</br>
                     no Figma, assim</br>
                     adquirindo</br>
@@ -134,9 +148,8 @@
                     Desenvolvedor</br> 
                     Front-End. Já</br>
                     trabalhei como</br>
-                    Operador de</br>
-                    Máquinas na empresa</br> 
-                    Alfagomma</br> 
+                    Machine Operator</br>
+                    na empresa Alfagomma</br> 
                     desenvolvendo</br>
                     habilidades como</br>
                     trabalho em equipe,</br>
@@ -145,11 +158,11 @@
                     detalhes. Porém o</br> 
                     que realmente quero</br>
                     é atuar na área de</br>
-                    tecnologia e</br>
+                    Tecnologia e</br>
                     utiliza-la para o</br> 
-                    bem da sociedade e</br>
-                    do mundo!</p>
-                    <img src="img/AboutMe/Foto-Sobre.png" alt="Foto minha" width="400px">
+                    Bem da Sociedade e</br>
+                    do Mundo!</p>
+                    <img src="img/AboutMe/Foto-Sobre.png" alt="Foto minha" width="390px">
                 </div>
             </section>
         </div>
@@ -166,4 +179,6 @@
         </footer>
     </body>
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </html>

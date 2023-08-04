@@ -35,9 +35,10 @@
 menu {
     display: none;
     padding-top: 20px;
-    background: #000;
+    background-color: rgba(21, 21, 23, 0.7);
     width: 71vh;
     transition: 0.6s all;
+
 }
 
 menu ul {
@@ -66,7 +67,7 @@ menu ul li a {
 
 menu ul li a:hover{
     border: none;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.6);
     color: #000;
 }
 
