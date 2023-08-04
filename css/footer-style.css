@@ -1,5 +1,5 @@
 .footer-style {
-    background-color: #000;
+    background-image: linear-gradient( #000000, #000, #000);
     color: #fff;
     font-family: 'Press Start 2P', cursive;
     font-size: 10px;
@@ -7,7 +7,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding-top: 10px;
+    padding-top: 20px;
     padding-bottom: 10px;
 }
 
@@ -24,12 +24,12 @@
 }
 
 .footer-style .gmail img {
-    transition: transform 200ms ease-in-out;
+    transition: 0.7s;
     cursor: pointer;
 }
 
 .footer-style .gmail img:hover {
-    transform: scale(1.2);
+    transform: rotate(-360deg);
 }
 
 @media screen and (max-width: 700px) {

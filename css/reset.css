@@ -17,6 +17,8 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	text-decoration: none;
+	list-style: none;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -24,6 +26,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+	background-color: #2d3436;
 	line-height: 1;
 }
 ol, ul {
@@ -40,4 +43,8 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+* {
+	box-sizing: border-box;
 }

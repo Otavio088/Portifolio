@@ -1,5 +1,5 @@
 .projects-style {
-    background-image: linear-gradient(#000, #2D3436, #2D3436, #2D3436, #000);
+    background-image: linear-gradient(212deg, #000, #2D3436, #2D3436, #2D3436, #000);
     color: #fff;
     font-family: 'Press Start 2P', cursive;
     text-shadow: 2px 2px 0px #000;
@@ -57,7 +57,17 @@
     }
 
     .projects-style .project .part1 {
+        display: flex;
+        flex-direction: column;
         gap: 40px;
+        padding-bottom: 80px;
+    }
+
+    .projects-style .project .part1 .informa-p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
     }
 
     .projects-style .project .part1 p {
@@ -65,11 +75,11 @@
     }
 
     .projects-style .project .part1 #tela-note {
-        width: 130px;
+        width: 220px;
     }
 
     .projects-style .project .part1 #tela-cll {
-        width: 40px;
+        width: 75px;
     }
 
     .projects-style .github {

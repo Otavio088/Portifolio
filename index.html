@@ -15,6 +15,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Copse&family=Press+Start+2P&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="css/reset.css" type="text/css">
+        <link rel="stylesheet" href="css/header-style.css" type="text/css">
         <link rel="stylesheet" href="css/home-style.css" type="text/css">
         <link rel="stylesheet" href="css/projects-style.css" type="text/css">
         <link rel="stylesheet" href="css/sobre-style.css" type="text/css">
@@ -22,7 +23,22 @@
     </head>
 
     <body>
-        <div class="home-style">
+        <header class="header-style">
+            <span id="menu-header" onclick="menuHead()">
+                <img id="menu1" src="img/menu.png" alt="menu">
+                <img id="menu2" src="img/menu-white.png" alt="menu">
+            </span>
+            
+            <menu id="conteudo">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#sobre">Sobre mim</a></li>
+                </ul>
+            </menu>
+        </header>
+
+        <div id="home" class="home-style">
             <div class="part-1">
                 <div class="centro">
                     <p>Prazer, Otávio Augusto!</p>
@@ -47,11 +63,11 @@
             </div>
         </div>
 
-        <div class="projects-style">
+        <div id="projects" class="projects-style">
             <h1>PROJETOS</h1>
             <section class="project">
                 <div class="part1">
-                    <div>
+                    <div class="informa-p">
                         <p>Nome</p>
                         <p>Linguagens</p>
                     </div>
@@ -66,7 +82,7 @@
             </section>
             <section class="project">
                 <div class="part1">
-                    <div>
+                    <div class="informa-p">
                         <p>Nome</p>
                         <p>Linguagens</p>
                     </div>
@@ -85,7 +101,7 @@
             </section>
         </div>
 
-        <div class="sobre-style">
+        <div id="sobre" class="sobre-style">
             <h1>SOBRE MIM</h1>
             <section>
                 <div class="conhecimentos">
@@ -133,7 +149,7 @@
                     utiliza-la para o</br> 
                     bem da sociedade e</br>
                     do mundo!</p>
-                    <img src="img/AboutMe/Foto-Sobre.png" alt="Foto minha" width="320px">
+                    <img src="img/AboutMe/Foto-Sobre.png" alt="Foto minha" width="400px">
                 </div>
             </section>
         </div>
@@ -149,4 +165,5 @@
                 </div>
         </footer>
     </body>
+    <script src="js/script.js"></script>
 </html>

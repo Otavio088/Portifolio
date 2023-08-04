@@ -1,5 +1,5 @@
 .home-style {
-    background-image: linear-gradient(#000, #0984E3, #0984E3, #0984E3, #000);
+    background-image: linear-gradient(160deg, #000, #0984E3, #000);
     color: white;
     height: 100vh;
     display: flex;
@@ -88,15 +88,16 @@
     .home-style .part-1 {
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 25px;
     }
 
     .home-style .part-1 .centro {
-        padding-top: 25px;
+        margin-top: 25px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 50px;
+        gap: 60px;
+        margin-bottom: 75px;
     }
 
     .home-style .part-1 .centro p {
@@ -118,15 +119,20 @@
     }
 
     .part-1 .links #perfil {
-        width: 200px;
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 
     .part-1 .links nav {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
-        gap: 14px;
+        gap: 45px;
+        margin-bottom: 20px;
     }
 
     .part-1 .links nav img {
@@ -135,12 +141,11 @@
     }
 
     .part-2 {
-      margin-top: 15px;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      margin-left: 0px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0px;
     }
 
     .part-2 p {

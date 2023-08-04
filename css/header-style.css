@@ -1,0 +1,100 @@
+.header-style {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    overflow: hidden;
+    position: fixed;
+}
+
+#menu-header img {
+    margin-top: 15px;
+    margin-right: 15px;
+    width: 60px;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+#menu-header #menu2 {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#menu-header:hover #menu2 {
+    visibility: visible;
+    opacity: 1;
+}
+
+#menu-header img:active {
+    transform: rotate(-360deg);
+}
+
+menu {
+    display: none;
+    padding-top: 20px;
+    background: #000;
+    width: 71vh;
+    transition: 0.6s all;
+}
+
+menu ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+menu ul li {
+   padding-top: 15px; 
+}
+
+menu ul li a {
+    padding-top: 3rem;
+    padding-bottom: 2.5em;
+    padding-left: 2.3rem;
+    padding-right: 2.2rem;
+    color: #fff;
+    font-size: 12px;
+    font-family: 'Press Start 2P', cursive;
+    white-space: nowrap;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    transition: background-color 0.8s, color 0.5s;
+}
+
+menu ul li a:hover{
+    border: none;
+    background-color: #fff;
+    color: #000;
+}
+
+@media screen and (max-width: 700px){
+    #menu-header img {
+        width: 45px;
+    }
+
+    menu {
+        width: 45vh;
+    }
+
+    menu ul li {
+        padding-top: 6px; 
+     }
+     
+
+    menu ul li a {
+        padding-top: 2rem;
+        padding-bottom: 2.7em;
+        padding-left: 1.3rem;
+        padding-right: 1.2rem;
+        color: #fff;
+        font-size: 9px;
+        font-family: 'Press Start 2P', cursive;
+        white-space: nowrap;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        transition: background-color 0.5s, color 0.5s;
+    }
+}
