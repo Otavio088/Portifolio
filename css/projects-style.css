@@ -20,47 +20,53 @@
     align-items: center;
 }
 
-.projects-style .project .part1 {
+.part1 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-top: 160px;
+    padding-top: 150px;
     padding-bottom: 100px;
 }
 
-.projects-style .project .part1 .informa-p {
+.part1 .informa-p {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
 }
 
-.projects-style .project .part1 .informa-p p {
-    font-size: 24px;
+.part1 .informa-p p {
+    font-size: 28px;
 }
 
-.projects-style .project .part1 .informa-p div {
+.part1 .informa-p nav {
     display: flex;
     gap: 25px;
 }
+.part1 .informa-p nav img {
+    transition: transform 200ms ease-in-out;
+}
+.part1 .informa-p nav img:hover {
+    transform: scale(1.2);
+}
 
-.projects-style .project .part1 .projetos-tela img {
+.part1 .projetos-tela img {
     cursor: pointer;
     transition: transform 200ms ease-in-out;
 }
 
-.projects-style .project .part1 .projetos-tela img:hover{
-    transform: scale(1.05);
+.part1 .projetos-tela img:hover{
+    transform: scale(1.07);
 }
 
 
-.projects-style .project .part2 p {
-    line-height: 22px; 
+.part2 p {
     font-size: 20px;
+    line-height: 22px; 
 }
 
 
-.projects-style .github {
+.github {
     padding-top: 150px;
     display: flex;
     flex-direction: row;
@@ -69,14 +75,15 @@
     padding-bottom: 50px;
 }
 
-.projects-style .github img {
+.github img {
     cursor: pointer;
     transition: transform 200ms ease-in-out;
 }
 
-.projects-style .github img:hover {
+.github img:hover {
     transform: scale(1.2);
 }
+
 
 @media screen and (max-width: 700px) {
     .projects-style {
@@ -90,48 +97,48 @@
         display: flex;
         flex-direction: column;
         gap: 40px;
-        padding-bottom: 45px;
+        padding-bottom: 40px;
     }
 
-    .projects-style .project .part1 .informa-p {
+    .part1 .informa-p {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 15px;
     }
 
-    .projects-style .project .part1 .informa-p p {
+    .part1 .informa-p p {
         font-size: 22px;
         margin-bottom: 10px;
     }
 
-    .projects-style .project .part1 #tela-note {
+    .part1 #tela-note {
         width: 250px;
     }
 
-    .projects-style .project .part1 #tela-cll {
+    .part1 #tela-cll {
         width: 90px;
         padding-right: 25px
     }
 
-    .projects-style .project .part2 {
-        padding: 0px 15px 0px 15px
+    .part2 {
+        padding: 0px 10px 0px 10px
     }
 
-    .projects-style .project .part2 p {
+    .part2 p {
         font-size: 10px;
     }    
 
-    .projects-style .github {
+    .github {
         gap: 12px;
     }
 
-    .projects-style .github p {
+    .github p {
         font-size: 8px;      
         white-space: nowrap;
     }
 
-    .projects-style .github img {
+    .github img {
         width: 60px;
     }
 }

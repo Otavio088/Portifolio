@@ -27,6 +27,11 @@
     opacity: 1;
 }
 
+#menu-header:hover #menu1 {
+    visibility: hidden;
+    opacity: 0;
+}
+
 #menu-header img:active {
     transform: rotate(-360deg);
 }
@@ -43,10 +48,6 @@ menu ul {
     display: flex;
     flex-direction: row;
     align-items: center;
-}
-
-menu ul li {
-   padding-top: px; 
 }
 
 menu ul li a {
@@ -74,26 +75,13 @@ menu ul li a:hover{
         width: 45px;
     }
 
-    menu {
-        width: 100%;
-    }
-
-    menu ul li {
-        padding-top: 0px; 
-     }
-     
-
     menu ul li a {
-        padding-top: 2rem;
+        padding-top: 2.2rem;
         padding-bottom: 3.4em;
         padding-left: 1.3rem;
         padding-right: 1.2rem;
         color: #fff;
         font-size: 8px;
         font-family: 'Press Start 2P', cursive;
-        white-space: nowrap;
-        -webkit-transition-duration: 0.3s;
-        transition-duration: 0.3s;
-        transition: background-color 0.5s, color 0.5s;
     }
 }

@@ -34,19 +34,22 @@
 
 @media screen and (max-width: 700px) {
     .footer-style {
-        font-size: 6px;
+        font-size: 5px;
         line-height: 8px;
         white-space: nowrap;
     }
+
     .footer-style div {
-        margin-left: 10px;
+        margin-left: 6px;
         margin-right: 0px;
     }
+
     .footer-style .gmail {
         gap: 10px;
         margin-right: 10px;
     }
+    
     .footer-style .gmail img {
-        width: 40px;
+        width: 35px;
     }
 }
