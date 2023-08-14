@@ -37,16 +37,20 @@
         font-size: 5px;
         line-height: 8px;
         white-space: nowrap;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     .footer-style div {
-        margin-left: 6px;
+        padding-left: 6px;
+        margin-left: 0px;
         margin-right: 0px;
     }
 
     .footer-style .gmail {
         gap: 10px;
-        margin-right: 10px;
+        padding-right: 10px;
     }
     
     .footer-style .gmail img {
