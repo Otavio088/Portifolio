@@ -35,8 +35,6 @@
 @media screen and (max-width: 700px) {
     .footer-style {
         font-size: 5px;
-        line-height: 8px;
-        white-space: nowrap;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -51,9 +49,10 @@
     .footer-style .gmail {
         gap: 10px;
         padding-right: 10px;
+        line-height: 8px;
     }
     
     .footer-style .gmail img {
-        width: 35px;
+        width: 32px;
     }
 }
