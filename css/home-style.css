@@ -29,10 +29,10 @@
 }
 
 .part-1 .centro h1 {
-    font-size: 140px;
+    font-size: 120px;
     font-family: 'Copse', serif;
     text-shadow: 4px 4px 0px #000;
-    line-height: 120px;
+    line-height: 130px;
 }
 
 .part-1 .links {
@@ -108,7 +108,7 @@
 
     .home-style .part-1 .centro h1 {
         font-size: 65px;
-        line-height: 55px;
+        line-height: 70px;
         white-space: nowrap;
     }
 
