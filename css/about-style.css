@@ -1,0 +1,105 @@
+.about-style {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #221515;
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 2px 2px 0px #000;
+    padding-top: 150px;
+    padding-bottom: 80px;
+}
+
+.about-style h1 {
+    font-size: 40px;
+    text-shadow: 4px 4px 0px #000;
+    padding-bottom: 100px;
+}
+
+.section-my .skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.skills div h2{
+    font-size: 22px;
+}
+
+.images-lang img {
+    width: 45px;
+    height: 45px;
+    transition: transform 200ms ease-in-out;
+}
+
+.images-lang img:hover {
+    transform: scale(1.1);
+}
+
+.section-my .information {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    padding: 5px;
+    background-color: #000;
+}
+
+.information .txt-info {
+    padding: 15px;
+    text-align: center;
+    background-color: #000;
+}
+
+.txt-info p {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+@media screen and (max-width: 700px) {
+    .about-style {
+        height: 100vh;
+        padding-top: 90px;
+    }
+
+    .about-style h1 {
+        font-size: 35px;
+        padding-bottom: 100px;
+    }
+
+    .section-my .skills {
+        margin-top: 50px;
+    }
+
+    .skills h2 {
+        font-size: 16px;
+    }
+
+    .skills img {
+        width: 30px;
+    }
+
+    .about-style .information {
+        padding: 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .information .txt-info {
+        padding: 5px;
+        padding-top: 12px;
+    }
+
+    .txt-info p {
+        font-size: 8px;
+        line-height: 11px;
+    }
+
+    .information img {
+        width: 100%;
+        height: 100%;
+    }
+}
