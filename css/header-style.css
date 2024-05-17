@@ -10,35 +10,18 @@
 
 #menu-header img {
     margin: 15px 15px 5px 15px;
+    height: 60px;
     cursor: pointer;
     transition: 0.7s;
 }
 
-#menu-header #menu2 {
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-#menu-header:hover #menu2 {
-    visibility: visible;
-    opacity: 1;
-}
-
-#menu-header:hover #menu1 {
-    visibility: hidden;
-    opacity: 0;
-}
-
 #menu-header img:active {
-    transform: rotate(-360deg);
+    transform: rotate(-290deg);
 }
 
 menu {
     display: none;
-    padding-top: 28px;
+    padding-top: 35px;
     background-color: rgba(21, 21, 23, 0.7);
     width: 100%;
     transition: 0.6s all;
@@ -52,7 +35,7 @@ menu ul {
 
 menu ul li a {
     padding-top: 3rem;
-    padding-bottom: 2.5em;
+    padding-bottom: 3.5em;
     padding-left: 2.3rem;
     padding-right: 2.2rem;
     color: #fff;
@@ -76,12 +59,18 @@ menu ul li a:hover{
     }
 
     menu ul li a {
-        padding-top: 2.2rem;
-        padding-bottom: 3.4em;
-        padding-left: 1.3rem;
-        padding-right: 1.2rem;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+        padding-left: 2vh;
+        padding-right: 3.3vh;
         color: #fff;
         font-size: 8px;
         font-family: 'Press Start 2P', cursive;
+    }
+
+    menu ul li a:hover{
+        border: none;
+        background-color: transparent;
+        color: white;
     }
 }

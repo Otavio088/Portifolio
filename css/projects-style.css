@@ -1,12 +1,12 @@
 .projects-style {
-    background-image: linear-gradient(212deg, #000, #2D3436, #2D3436, #2D3436, #000);
-    color: #fff;
-    font-family: 'Press Start 2P', cursive;
-    text-shadow: 2px 2px 0px #000;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 150px;
+    background-color: #102c41;
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 2px 2px 0px #000;
 }
 
 .projects-style h1 {
@@ -20,51 +20,58 @@
     align-items: center;
 }
 
-.part1 {
+.project .presentation-site {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-top: 150px;
-    padding-bottom: 100px;
+    padding-top: 200px;
+    padding-bottom: 60px;
+    gap: 50px;
 }
 
-.part1 .informa-p {
+.presentation-site .title-languages {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
 }
 
-.part1 .informa-p p {
-    font-size: 28px;
+.title-languages h2 {
+    font-size: 22px;
 }
 
-.part1 .informa-p nav {
+.title-languages .nav-icons {
     display: flex;
-    gap: 25px;
+    flex-direction: row;
+    gap: 20px;
 }
-.part1 .informa-p nav img {
+
+.nav-icons img {
     transition: transform 200ms ease-in-out;
 }
-.part1 .informa-p nav img:hover {
-    transform: scale(1.2);
+
+.nav-icons img:hover {
+    transform: scale(1.08);
 }
 
-.part1 .projetos-tela img {
+.link-screen img {
     cursor: pointer;
     transition: transform 200ms ease-in-out;
 }
 
-.part1 .projetos-tela img:hover{
-    transform: scale(1.07);
+.link-screen img:hover{
+    transform: scale(1.08);
 }
 
+.info-site {
+    padding-bottom: 50px;
+}
 
-.part2 p {
+.info-site p {
     font-size: 20px;
-    line-height: 22px; 
+    line-height: 25px;
+    text-align: center;
 }
-
 
 .github {
     padding-top: 150px;
@@ -81,64 +88,72 @@
 }
 
 .github img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 
 @media screen and (max-width: 700px) {
     .projects-style {
-        padding-top: 80px;
+        padding-top: 90px;
     }
+
     .projects-style h1 {
         font-size: 35px;
     }
 
-    .projects-style .project .part1 {
+    .project .presentation-site {
         display: flex;
         flex-direction: column;
         gap: 40px;
-        padding-bottom: 40px;
+        padding-top: 160px;
+        padding-bottom: 30px;
     }
 
-    .part1 .informa-p {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
+    .title-languages h2 {
+        font-size: 20px;
+        margin-bottom: 5px;
     }
 
-    .part1 .informa-p p {
-        font-size: 22px;
-        margin-bottom: 10px;
+    .nav-icons img {
+        transition: none;
+    }
+    
+    .nav-icons img:hover {
+        transform: none;
+    }
+    
+    .link-screen img {
+        width: 280px;
+        transition: none;
     }
 
-    .part1 #tela-note {
-        width: 250px;
+    .link-screen img:hover {
+        transform: none;
     }
 
-    .part1 #tela-cll {
-        width: 90px;
-        padding-right: 25px
+    .info-site {
+        padding: 0px 25px 0px 25px
     }
 
-    .part2 {
-        padding: 0px 10px 0px 10px
-    }
-
-    .part2 p {
+    .info-site p {
         font-size: 10px;
+        line-height: 19px;
     }    
 
     .github {
-        gap: 12px;
+        gap: 10px;
     }
 
-    .github p {
-        font-size: 8px;      
-        white-space: nowrap;
+    .github h3 {
+        font-size: 8px;
     }
 
     .github img {
         width: 60px;
+        transition: none;
+    }
+
+    .github img:hover {
+        transform: none;
     }
 }

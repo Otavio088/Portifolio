@@ -7,18 +7,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=1.0">
 
         <title>Portifólio | Otávio Augusto</title>
-
         <link rel="icon" href="img/icones/icone.png">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Copse&family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap&family=Press+Start+2P&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="css/reset.css" type="text/css">
         <link rel="stylesheet" href="css/header-style.css" type="text/css">
         <link rel="stylesheet" href="css/home-style.css" type="text/css">
         <link rel="stylesheet" href="css/projects-style.css" type="text/css">
-        <link rel="stylesheet" href="css/sobre-style.css" type="text/css">
+        <link rel="stylesheet" href="css/about-style.css" type="text/css">
+        <link rel="stylesheet" href="css/splah-style.css" type="text/css">
         <link rel="stylesheet" href="css/footer-style.css" type="text/css">
     
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
@@ -27,148 +27,157 @@
     <body>
         <header class="header-style">
             <span id="menu-header" onclick="menuHead()">
-                <img id="menu1" src="img/Menu/menu.png" alt="menu">
-                <img id="menu2" src="img/Menu/menu-white.png" alt="menu">
+                <img src="img/Menu/menu.png" alt="menu">
             </span>
-            <menu id="conteudo">
+            <menu id="content">
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#projects">Projetos</a></li>
-                    <li><a href="#sobre">Sobre mim</a></li>
+                    <li><a href="#about">Sobre mim</a></li>
                 </ul>
             </menu>
         </header>
 
-        <div id="home" class="home-style">
-            <div class="part-1">
-                <div class="centro">
-                    <p>Prazer, Otávio Augusto!</p>
-                        <h1>Back-end</br>
-                        Developer</h1>
-                </div>
-                <div class="links">
-                    <img id="perfil" src="img/Home/FotoPerfil.png" alt="Minha foto de perfil">
-                    <nav>
-                        <a href="https://github.com/Otavio088" target="_blank"><img src="img/Home/GitHub.png" alt="Imagem do GitHub" title="GitHub" width="65px"></a>
-                        <a href="https://www.linkedin.com/in/ot%C3%A1vio-augusto-de-melo-ribeiro-8a5314276/" target="_blank"><img src="img/Home/Linkedin.png" alt="Imagem do LinkedIn" title="LinkedIn" width="65px"></a>
-                        <a href="img/Currículo.pdf" target="_blank"><img src="img/Home/Curriculo.png" alt="Imagem do Curriculo" title="Currículo" width="65px"></a>
-                    </nav>
-                </div>
-            </div>
-            <div class="part-2">
-                <p>Tenho 21 anos, atualmente estou</br>
-                cursando a Faculdade de ADS e</br>
-                tenho alguns Projetos Pessoais!</p>
-            </div>
-        </div>
-
-        <div id="projects" class="projects-style" >
-            <h1 data-aos="fade-up">PROJETOS</h1>
-            <section class="project" data-aos="fade-up">
-                <div class="part1">
-                    <div class="informa-p" data-aos="fade-up">
-                        <p>Site de Música</p>
-                        <nav>
-                            <img width="50px" src="img/icones/html5-original.svg"/>
-                            <img width="50px" src="img/icones/css3-original.svg"/>
-                            <img width="50px" src="img/icones/javascript-original.svg"/>
+        <main>
+            <div id="home" class="home-style">
+                <div class="part-1">
+                    <div class="center">
+                        <p>Prazer, Otávio Augusto!</p>
+                            <h1>FRONT-END</br>
+                            DEVELOPER</h1>
+                    </div>
+                    <div class="links">
+                        <img id="profile" src="img/Home/FotoPerfil.png" alt="Minha foto">
+                        <nav class="nav-links">
+                            <a href="https://github.com/Otavio088" target="_blank"><img src="img/Home/GitHub.png" alt="Icone GitHub" title="GitHub" width="65px"></a>
+                            <a href="https://www.linkedin.com/in/otavioaugustoribeiro/" target="_blank"><img src="img/Home/Linkedin.png" alt="Icone LinkedIn" title="LinkedIn" width="65px"></a>
+                            <a href="img/Currículo.pdf" target="_blank"><img src="img/Home/Curriculo.png" alt="Icone Curriculo" title="Currículo" width="65px"></a>
                         </nav>
                     </div>
-                    <div class="projetos-tela" data-aos="fade-up">
-                        <a target="_blank" href="https://decifreimusic.netlify.app/index.html"><img id="tela-note" width="500px" src="img/Projects/notebook-site.png" alt="Tela de Notebook"></a>
-                        <a target="_blank" href="https://decifreimusic.netlify.app/index.html"><img id="tela-cll" width="120px" src="img/Projects/celular-site.png" alt="Tela de Celular"></a>
-                    </div>
                 </div>
-                <div class="part2">
-                    <p>Um site de música desenvolvido para a Escola de Música</br>
-                    DeCifrei. Possui diferentes páginas e diferentes efeitos.</br>
-                    Mudanças serão feitas.</p>
+                <div class="part-2">
+                    <p>Atualmente com 21 anos de idade</br>
+                    e cursando a Faculdade de ADS,</br>
+                    tenho experiência desenvolvendo</br>
+                    vários projetos freelancer!</p>
                 </div>
-            </section>
-            <section class="project" data-aos="fade-up">
-                <div class="part1">
-                    <div class="informa-p" data-aos="fade-up">
-                        <p>Calculadora</p>
-                        <nav>
-                            <img width="50px" src="img/icones/html5-original.svg"/>
-                            <img width="50px" src="img/icones/css3-original.svg"/>
-                            <img width="50px" src="img/icones/javascript-original.svg"/>
-                        </nav>
-                    </div>
-                    <div class="projetos-tela" data-aos="fade-up">
-                        <a target="_blank" href="https://otavio088.github.io/Calculadora/"><img id="tela-note" width="500px" src="img/Projects/notebook-calculadora.png" alt="Tela de Notebook"></a>
-                        <a target="_blank" href="https://otavio088.github.io/Calculadora/"><img id="tela-cll" width="120px" src="img/Projects/celular-calculadora.png" alt="Tela de Celular"></a>
-                    </div>
-                </div>
-                <div class="part2">
-                    <p>Uma Calculadora que Realiza Operações Simples. Foi</br>
-                    adicionado um botão que altera entre três tipos de cores</br>
-                    diferentes.</p>
-                </div>
-            </section>
-            <section class="github">
-                <p>Mais Projetos no meu GitHub: </p>
-                <a href="https://github.com/Otavio088?tab=repositories" target="_blank"><img src="img/Projects/GitHub.png" alt="logo GitHub" title="GitHub" width="100px"></a>
-            </section>
-        </div>
+            </div>
 
-        <div id="sobre" class="sobre-style">
-            <h1 data-aos="fade-up">SOBRE MIM</h1>
-            <section data-aos="fade-up">
-                <div class="conhecimentos">
-                    <div>
-                        <h2>Conhecimentos em:</h2>
+            <div id="projects" class="projects-style" >
+                <h1 data-aos="fade-up">PROJETOS</h1>
+                <section class="project" data-aos="fade-up">
+                    <div class="presentation-site">
+                        <div class="title-languages">
+                            <h2>Site de Música</h2>
+                            <nav class="nav-icons">
+                                <img width="50px" src="img/icones/html5-original.svg"/>
+                                <img width="50px" src="img/icones/css3-original.svg"/>
+                                <img width="50px" src="img/icones/javascript-original.svg"/>
+                            </nav>
+                        </div>
+                        <div class="link-screen">
+                            <a target="_blank" href="https://decifreimusic.netlify.app/index.html"><img width="450px" src="img/Projects/img-sitemusica.png" alt="Tela de divulgação"></a>
+                        </div>
                     </div>
-                    <div class="images-lang">
-                        <img src="img/icones/java-original.svg" />
-                        <img src="img/icones/c-original.svg" />
-                        <img src="img/icones/html5-original.svg"/>
-                        <img src="img/icones/css3-original.svg"/>
-                        <img src="img/icones/javascript-original.svg"/>
-                        <img src="img/icones/git-original.svg" />
+                    <div class="info-site">
+                        <p>Desenvolvido para a Escola de Música DeCifrei,</br>
+                        possui informações sobre Aulas e Cursos oferecidos.</br>
+                        Tem o intuito de auxiliar as necessidades da Escola</br>
+                        em relação ao mundo da web.</p>
                     </div>
+                </section>
+                <section class="project" data-aos="fade-up">
+                    <div class="presentation-site">
+                        <div class="title-languages">
+                            <h2>Calculadora</h2>
+                            <nav class="nav-icons">
+                                <img width="50px" src="img/icones/html5-original.svg"/>
+                                <img width="50px" src="img/icones/css3-original.svg"/>
+                                <img width="50px" src="img/icones/javascript-original.svg"/>
+                            </nav>
+                        </div>
+                        <div class="link-screen">
+                            <a target="_blank" href="https://otavio088.github.io/Calculadora/"><img width="450px" src="img/Projects/img-calculadora.png" alt="Tela de divulgação"></a>
+                        </div>
+                    </div>
+                    <div class="info-site">
+                        <p>Uma Calculadora que Realiza Operações Simples.</br>
+                        Foi adicionado um botão que altera entre três tipos</br>
+                        de cores diferentes.</p>
+                    </div>
+                </section>
+                <div class="github" data-aos="fade-up">
+                    <h3>Mais Projetos no meu GitHub: </h3>
+                    <a href="https://github.com/Otavio088" target="_blank"><img src="img/Projects/GitHub.png" alt="logo GitHub" title="GitHub" width="100px"></a>
                 </div>
-                <div class="informações">
-                    <p>Atualmente estou no</br>
-                    quarto período da</br>
-                    Faculdade de Análise</br>
-                    e Desenvolvimento de</br>
-                    Sistemas. Tenho montado</br>
-                    meus esboços no Figma,</br>
-                    assim, adquirindo</br>
-                    experiência com UI/UX</br>
-                    Design e Desenvolvedor</br> 
-                    Front-End. Porém, tenho</br>
-                    maior interesse no Back-end</br>
-                    onde estou estudando e</br>
-                    aprimorando minhas</br>
-                    habilidades e conhecimento</br>
-                    atualmente. Já trabalhei</br> 
-                    como Machine Operator na</br> 
-                    empresa Alfagomma desenvolvendo</br>
-                    habilidades como trabalho</br>
-                    em equipe, organização</br>
-                    e atenção aos detalhes.</br> 
-                    O que eu quero no entando</br>
-                    é atuar na área de</br>
-                    Tecnologia e utiliza-la</br>
-                    da melhor forma possível!</p>
-                    <img src="img/AboutMe/Foto-Sobre.png" alt="Foto minha" width="400px">
-                </div>
-            </section>
-        </div>
+            </div>
 
+            <div id="about" class="about-style">
+                <h1 data-aos="fade-up">SOBRE MIM</h1>
+                <section class="section-my" data-aos="fade-up">
+                    <div class="skills">
+                        <div>
+                            <h2>Conhecimentos em:</h2>
+                        </div>
+                        <div class="images-lang">
+                            <img src="img/icones/java-original.svg" />
+                            <img src="img/icones/c-original.svg" />
+                            <img src="img/icones/html5-original.svg"/>
+                            <img src="img/icones/css3-original.svg"/>
+                            <img src="img/icones/javascript-original.svg"/>
+                            <img src="img/icones/git-original.svg" />
+                        </div>
+                    </div>
+                    <div class="information">
+                        <div class="txt-info">
+                            <p>Atualmente, no quarto período</br>
+                            da Faculdade de Análise e</br>
+                            Desenvolvimento de Sistemas,</br>
+                            tenho desenvolvido por conta</br>
+                            vários projetos voltados para</br>
+                            a web.</br>
+                            Buscando sempre trazer uma</br> 
+                            melhor experiência do usuário,</br>
+                            mantenho sempre meu foco em</br>
+                            desenvolvimento Front-end e</br>
+                            UX/UI design.</br>
+                            Além disso, busco um dia me</br>
+                            me tornar um desenvolvedor</br>
+                            completo, dominando tanto o</br>
+                            Front-end como o Back-end.</br>
+                            Atualmente na parte Back-end</br>
+                            estou constantemente estudando</br>
+                            a linguagem Java, com vários</br>
+                            projetos pessoais!</p>
+                        </div>
+                        <div class="photo-info">
+                            <img src="img/AboutMe/Foto-Sobre.png" alt="Minha foto" width="300px">
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="splash">
+                <h1>ENVIADO</h1>
+                <h2>❤️</h2>
+            </div>
+        </main>
         <footer class="footer-style">
-                <div>
-                    <p>Otávio Augusto de Melo Ribeiro | &copy;</p>
-                </div>
-                <div class="gmail">
-                    <p>Me manda uma</br>
-                    mensagem! -></p>
-                    <a href="mailto:otavio208augustoribeiro@gmail.com"><img src="img/Footer/gmail.png" alt="Logo gmail" title="gmail" width="45px"></a>
-                </div>
+            <div class="gmail" data-aos="fade-up">
+                <h1>ALGUMA DUVIDA?</h1>
+                <h2>Me manda uma mensagem!</h2>
+                <h3>📧</h3>
+                <form action="https://formsubmit.co/otavio208augustoribeiro@gmail.com" method="POST" class="contact-form">
+                    <input type="text" name="name" placeholder="Nome" id="name" required>
+                    <input type="email" name="email" placeholder="Email" id="email" required>
+                    <textarea name="message" placeholder="Conteúdo..." id="message" required></textarea>
+                    <button type="submit">Enviar</button>
+               </form>
+            </div>
+            <div class="copy">
+                <p>Otávio Augusto de Melo Ribeiro | &copy;</p>
+            </div>
         </footer>
-
     </body>
     <script src="js/script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

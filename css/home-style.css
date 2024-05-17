@@ -1,5 +1,11 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .home-style {
-    background-image: linear-gradient(160deg, #000, #0984E3, #000);
+    background-color: #2D3436;
     color: white;
     height: 100vh;
     display: flex;
@@ -8,143 +14,113 @@
     justify-content: center;
 }
 
-
 .home-style .part-1 {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.part-1 .centro{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
+.part-1 .center {
     margin-right: 5px
 }
 
-.part-1 .centro p {
-    font-size: 25px;
+.center p {
+    font-size: 22px;
     font-family: 'Press Start 2P', cursive;
     text-shadow: 2px 2px 0px #000;
 }
 
-.part-1 .centro h1 {
+.center h1 {
     font-size: 120px;
-    font-family: 'Copse', serif;
+    font-family: "Francois One", sans-serif;
     text-shadow: 4px 4px 0px #000;
-    line-height: 130px;
+    line-height: 120px;
 }
 
 .part-1 .links {
     display: flex;
     flex-direction: column;
-    align-items: center;
+}
+
+.links #profile {
+    border: 4px solid #000;
+    box-shadow: 5px 5px 4px #000;
+}
+
+.links .nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 15px;
     margin-bottom: 10px;
 }
 
-.part-1 .links #perfil {
-    border: 4px solid #000;
-    box-shadow: 6px 6px 4px #000;
-}
-
-.part-1 .links nav {
-    display: flex;
-    flex-direction: row;
-    margin-top: 15px;
-    gap: 28px;
-}
-
-.part-1 .links nav img {
+.nav-links img {
     box-shadow: 4px 4px 2px black;
     cursor: pointer;
     transition: transform 200ms ease-in-out;
 }
 
-.links nav img:hover {
+.nav-links img:hover {
     transform: scale(1.08);
 }
 
-
-.part-2 {
-    margin-left: 200px;
+.home-style .part-2 {
+    margin-left: 155px;
 }
 
 .part-2 p {
-    font-size: 25px;
+    font-size: 22px;
     font-family: 'Press Start 2P', cursive;
-    line-height: 28px;
+    line-height: 25px;
     text-shadow: 2px 2px 0px #000;
 }
 
 
 @media screen and (max-width: 700px) {
-    .home-style {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    
     .home-style .part-1 {
         display: flex;
         flex-direction: column;
-        gap: 25px;
     }
 
-    .home-style .part-1 .centro {
+    .part-1 .center {
         margin-top: 5px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
         gap: 100px;
-        margin-bottom: 100px;
+        margin-bottom: 125px;
     }
 
-    .home-style .part-1 .centro p {
+    .center p {
         font-size: 14px;
-        white-space: nowrap;
     }
 
-    .home-style .part-1 .centro h1 {
-        font-size: 65px;
-        line-height: 70px;
-        white-space: nowrap;
+    .center h1 {
+        font-size: 70px;
+        line-height: 65px;
     }
 
-    .part-1 .links #perfil {
-        visibility: hidden;
-        opacity: 0;
-        position: absolute;
-        top: 0;
-        left: 0;
+    .part-1 .links #profile {
+        display: none;
     }
 
-    .part-1 .links nav {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: 45px;
-        margin-bottom: 20px;
+    .links .nav-links {
+        gap: 50px;
+        margin-bottom: 25px;
     }
 
-    .part-1 .links nav img {
-        width: 50px;
+    .nav-links img {
+        width: 60px;
         box-shadow: 4px 4px 2px black;
     }
 
-    .part-2 {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
+    .home-style .part-2 {
         margin-left: 0px;
     }
 
     .part-2 p {
         font-size: 11px;
         line-height: 14px;
-        white-space: nowrap;
     }
 }
