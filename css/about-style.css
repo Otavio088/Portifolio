@@ -61,8 +61,8 @@
 
 @media screen and (max-width: 700px) {
     .about-style {
-        height: 100vh;
         padding-top: 90px;
+        padding-bottom: 90px;
     }
 
     .about-style h1 {
@@ -74,12 +74,17 @@
         margin-top: 50px;
     }
 
-    .skills h2 {
+    .skills div h2 {
         font-size: 16px;
     }
 
-    .skills img {
+    .images-lang img {
         width: 30px;
+        transition: none;
+    }
+
+    .images-lang img:hover {
+        transform: none;
     }
 
     .about-style .information {

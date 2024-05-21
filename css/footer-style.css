@@ -66,6 +66,16 @@ form button:hover, button:focus {
     background-color: #216192;
 }
 
+.succes {
+    color: greenyellow;
+    text-align: center;
+}
+
+.error {
+    color: tomato;
+    text-align: center;
+}
+
 .footer-style .copy {
     margin-top: 150px;
     margin-bottom: 25px;
