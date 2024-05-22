@@ -37,15 +37,15 @@ class FormSubmit {
     }
 
     onSubmission(event) {
-        event.preventDefault();
-        event.target.disabled = true;
-        event.target.innerText = "Enviando..."
+        event.preventDefault(); 
+        this.formButton.disabled = true;
+        this.formButton.innerText = "Enviando...";
     }
 
     async sendForm(event) {
         this.onSubmission(event);
         try {
-            await fetch(this.url, {
+            const response = await fetch(this.url, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -53,16 +53,21 @@ class FormSubmit {
                 },
                 body: JSON.stringify(this.getFormObject()),
             });
-            this.displaySuccess();
+            if (response.ok) {
+                this.displaySuccess();
+            } else {
+                this.displayError();
+            }
         } catch (error) {
             this.displayError();
-            throw new Error(error);
+            console.error(error);
         }
     }
 
     init() {
-        if (this.form) 
-            this.formButton.addEventListener("click", this.sendForm);  
+        if (this.form) {
+            this.form.addEventListener("submit", this.sendForm);
+        }
         return this;
     }
 }
